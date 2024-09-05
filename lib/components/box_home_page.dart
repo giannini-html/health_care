@@ -54,7 +54,7 @@ class _BoxHomeWidgetState extends State<BoxHomeWidget> {
             color: const Color.fromARGB(255, 230, 230, 230),
             child: const IconContent(
               icon: Icons.groups,
-              label: 'Clientes',
+              label: 'Pacientes',
             ),
             onPress: () {
               Navigator.pushReplacementNamed(

@@ -299,13 +299,4 @@ class DatabaseService {
     }
   }
 
-  Future<void> updateCronograma(Usuario usuario) async {
-    try {
-      await _firestore.collection('usuarios').doc(usuario.id).update({
-        'cronograma': usuario.cronograma!.toJson(),
-      });
-    } catch (e) {
-      throw Exception('Erro ao atualizar cronograma: $e');
-    }
-  }
 }

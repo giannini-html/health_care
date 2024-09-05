@@ -4,13 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:health_care/firebase_options.dart';
 import 'package:health_care/services/messaging_service.dart';
 import 'package:health_care/shared/constants.dart';
-import 'package:health_care/models/usuario.dart';
 import 'package:health_care/pages/alterar_senha_page.dart';
 import 'package:health_care/pages/arquivos_page.dart';
 import 'package:health_care/pages/cadastro_page.dart';
 import 'package:health_care/pages/clientes_page.dart';
 import 'package:health_care/pages/configuracoes_page.dart';
-import 'package:health_care/pages/cronograma_page.dart';
 import 'package:health_care/pages/detalhes_arquivos_page.dart';
 import 'package:health_care/pages/detalhes_reunioes_page.dart';
 import 'package:health_care/pages/detalhes_vistorias_page.dart';
@@ -50,7 +48,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: KTextTheme,
       routes: {
-        "/": (context) => const HomePage(),
+        "/home": (context) => const HomePage(),
         "/login": (context) => const LoginPage(),
         "/registrar": (context) => const CadastroPage(),
         "/clientes": (context) => const ClientesPage(),
@@ -66,7 +64,6 @@ class MyApp extends StatelessWidget {
         "/alterar-senha": (context) => const AlterarSenhaPage(),
         "/esqueceu-senha": (context) => const EsqueceuSenhaPage(),
         "/configuracoes": (context) => const ConfiguracoesPage(),
-        '/cronograma': (context) => CronogramaPage(usuario: ModalRoute.of(context)!.settings.arguments as Usuario)
       },
       initialRoute: '/',
     );

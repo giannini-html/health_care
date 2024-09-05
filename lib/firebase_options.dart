@@ -33,11 +33,10 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBwa01B1cbEvcFnF6EgjtBqOnEgidUdcLQ',
-    appId: '1:208987347574:web:a6ce7fc855430135b45d57',
-    messagingSenderId: '371772887866',
-    projectId: 'healthcare-3426c',
-    authDomain: 'healthcare-3426c.firebaseapp.com',
-    storageBucket: 'healthcare-3426c.appspot.com',
-  );
+      apiKey: "AIzaSyB5u9clr8GgAgVtyI7khpMDZmyPP1Fq-2g",
+      authDomain: "healthcare-c80a2.firebaseapp.com",
+      projectId: "healthcare-c80a2",
+      storageBucket: "healthcare-c80a2.appspot.com",
+      messagingSenderId: "945815119711",
+      appId: "1:945815119711:web:537fc56630f8c0ee0438ea");
 }

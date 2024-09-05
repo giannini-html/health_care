@@ -297,11 +297,6 @@ class _CadastroComponentState extends State<CadastroComponent> {
               "/login",
             );
 
-            Navigator.pushReplacementNamed(
-              context,
-              "/cadastro-endereco-atual",
-              arguments: RouteArguments(usuario, senhaController.text),
-            );
           } else {
             _exibirMensagem("Preencha todos os campos");
           }

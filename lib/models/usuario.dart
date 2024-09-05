@@ -15,7 +15,6 @@ class Usuario {
   List<Reuniao>? reunioes;
   List<Vistoria>? vistorias;
   List<Arquivo>? arquivos;
-  Cronograma? cronograma;
 
   Usuario({
     this.id,
@@ -28,7 +27,6 @@ class Usuario {
     this.reunioes,
     this.vistorias,
     this.arquivos,
-    this.cronograma,
   });
 
   Map<String, dynamic> toJson() {
@@ -43,7 +41,6 @@ class Usuario {
       'reunioes': reunioes?.map((reuniao) => reuniao.toJson()).toList(),
       'vistorias': vistorias?.map((vistoria) => vistoria.toJson()).toList(),
       'arquivos': arquivos?.map((arquivo) => arquivo.toJson()).toList(),
-      'cronograma': cronograma!.toJson(),
     };
   }
 
@@ -72,10 +69,7 @@ class Usuario {
           ? (json['arquivos'] as List<dynamic>)
               .map((arquivo) => Arquivo.fromJson(arquivo))
               .toList()
-          : null,
-      cronograma: Cronograma.fromJson(
-        json['cronograma'],
-      ),
+          : null
     );
   }
 }
